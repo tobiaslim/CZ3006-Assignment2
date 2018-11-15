@@ -1,0 +1,120 @@
+@font-face {
+    font-family: "OpenSansCondensed Light";
+    src: url("res/OpenSansCondensed-Light.ttf");
+}
+
+input{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 30px;
+    padding: 5px;
+    background: #fcefef;
+}
+
+body{
+    font-family: "OpenSansCondensed Light";
+}
+
+
+div.wrapper {
+	margin: 1% 1% 1% 1%;
+	background: #ffd6c1;
+	padding: 3% 3% 3% 3%;
+}
+
+.custom-field{
+    position: relative;
+    width: 70%;
+    margin: auto;
+    height: 3vw;
+}
+.custom-field > *{
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+}
+.custom-field :nth-child(2){
+    left: 20%;
+    right: 0;
+}
+.custom-field :nth-child(3){
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.custom-field button{
+    width: 20%;
+    top: 0;
+    bottom:0;
+    background: white;
+}
+
+.custom-field button:hover{
+    background: #E86B21;
+}
+
+.custom-field input{
+	width: 60%;
+    display: inline-block;
+}
+
+td.input-wrapper{
+	width: 30%;
+	display: inline-block;
+	background: #ffd6c1;
+    padding: 1.5% 1.5%;
+}
+
+
+
+td.input-wrapper > *{
+	display: block;
+}
+
+.table{
+	width: 100%;
+}
+
+.error-message {
+	color: red;
+    min-height: 30px;
+}
+
+.main-error{
+    background: red;
+    color: white;
+    font-size: 3vw;
+    padding: 20px;
+}
+
+.products-image{
+    max-width: 100%;
+}
+
+
+#billing-info {
+    max-width: 50%;
+}
+
+@media(max-width: 680px){
+	td.input-wrapper{
+		width: 100%;
+		display: block;
+        margin-bottom: 20px;
+        font-family: "OpenSansCondensed Bold";
+	}
+    
+    .custom-field{
+    height: 8vw;
+    }
+    #billing-info {
+    max-width: 100%;
+}
+
+}
+
+
+#sumTB {
+    background: #efefef;
+}
